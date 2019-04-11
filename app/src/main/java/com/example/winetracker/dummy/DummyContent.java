@@ -27,9 +27,13 @@ public class DummyContent {
 
     static {
         // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-            addItem(createDummyItem(i));
-        }
+        //for (int i = 1; i <= COUNT; i++) {
+          //  addItem(createDummyItem(i));
+        //
+        // }
+        addItem(new DummyItem("1","info page", "give me your ideas here"));
+        addItem(new DummyItem("2", "wine list", "list of wine"));
+        addItem(new DummyItem("3", "location", "click here for location"));
     }
 
     private static void addItem(DummyItem item) {

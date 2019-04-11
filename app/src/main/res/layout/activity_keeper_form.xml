@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KeeperForm">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/wineyard" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtName"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editWine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/txtType"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editPurchasedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/txtPurchasedAt"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/numPrice"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/numRating"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/grapes" />
+</LinearLayout>

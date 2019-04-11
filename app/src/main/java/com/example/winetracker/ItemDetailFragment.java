@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import com.example.winetracker.dummy.DummyContent;
 
@@ -63,6 +65,24 @@ public class ItemDetailFragment extends Fragment {
             ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
         }
 
+        if (mItem.id.equals("1")){
+            rootView = inflater.inflate(R.layout.activity_keeper_form, container, false);
+
+            final EditText name = rootView.findViewById(R.id.editName);
+            final EditText type = rootView.findViewById(R.id.editWine);
+            final EditText purchasedAt = rootView.findViewById(R.id.editPurchasedAt);
+            final EditText price = rootView.findViewById(R.id.editPrice);
+            final EditText rating = rootView.findViewById(R.id.editRating);
+            Button button = rootView.findViewById(R.id.btnSubmit);
+
+            button.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    wineKeeper keeperForm = new wineKeeper(name.getText().toString(),type.getText().toString(),
+                            purchasedAt.getText().toString(),Double.parseDouble(price.getText().toString()), Double.parseDouble(rating.getText().toString()));
+                }
+            });
+        }
         return rootView;
     }
 }
