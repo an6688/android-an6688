@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">WineTracker</string>
     <string name="title_item_detail">Item Detail</string>
-    <string name="txtName">Name:</string>
-    <string name="txtType">Type:</string>
+    <string name="txtName">Name of wine:</string>
+    <string name="txtWineType">Wine Type</string>
     <string name="txtPurchasedAt">Purchased at:</string>
     <string name="numPrice">Price:</string>
     <string name="numRating">Rating:</string>
+    <string name="txtHeader">Enter wine details here</string>
+    <string name="txtConfirmation">Entered info to wine diary</string>
 </resources>

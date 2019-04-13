@@ -1,6 +1,7 @@
 package com.example.winetracker;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -61,27 +62,41 @@ public class ItemDetailFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.item_detail, container, false);
 
         // Show the dummy content as text in a TextView.
-        if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
-        }
+//        if (mItem != null) {
+//            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
+//        }
 
         if (mItem.id.equals("1")){
             rootView = inflater.inflate(R.layout.activity_keeper_form, container, false);
-
-            final EditText name = rootView.findViewById(R.id.editName);
-            final EditText type = rootView.findViewById(R.id.editWine);
-            final EditText purchasedAt = rootView.findViewById(R.id.editPurchasedAt);
-            final EditText price = rootView.findViewById(R.id.editPrice);
-            final EditText rating = rootView.findViewById(R.id.editRating);
+            //1 is the wine diary
             Button button = rootView.findViewById(R.id.btnSubmit);
 
             button.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
+                    final EditText name = v.findViewById(R.id.editName);
+                    final EditText type = v.findViewById(R.id.editWineType);
+                    final EditText purchasedAt = v.findViewById(R.id.editPurchasedAt);
+                    final EditText price = v.findViewById(R.id.editPrice);
+                    final EditText rating = v.findViewById(R.id.editRating);
                     wineKeeper keeperForm = new wineKeeper(name.getText().toString(),type.getText().toString(),
                             purchasedAt.getText().toString(),Double.parseDouble(price.getText().toString()), Double.parseDouble(rating.getText().toString()));
+
+                    Intent intent = new Intent (getContext(), ConfirmationPage.class);
+                    intent.putExtra("keeperForm", keeperForm);
+                    startActivity(intent);
                 }
+
+
             });
+        }
+        else if (mItem.id.equals("2")){
+            // 2 is list wine youve tried
+        }
+
+        else if (mItem.id.equals("3"))
+        {
+            // 3 is location of wines to get the wines you tried
         }
         return rootView;
     }

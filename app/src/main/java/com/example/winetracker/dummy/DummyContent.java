@@ -31,7 +31,7 @@ public class DummyContent {
           //  addItem(createDummyItem(i));
         //
         // }
-        addItem(new DummyItem("1","info page", "give me your ideas here"));
+        addItem(new DummyItem("1","Wine diary", "give me your ideas here"));
         addItem(new DummyItem("2", "wine list", "list of wine"));
         addItem(new DummyItem("3", "location", "click here for location"));
     }

@@ -1,6 +1,8 @@
 package com.example.winetracker;
 
-public class wineKeeper {
+import java.io.Serializable;
+
+public class wineKeeper implements Serializable {
     private String wineName;
     private String wineType;
     private String purchasedAt;
