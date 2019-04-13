@@ -20,10 +20,11 @@
         />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
         android:text="@string/txtHeader"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:fontFamily="cursive" />
 
@@ -38,8 +39,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/txtName"
-        android:inputType="textPersonName"
-        android:textSize="18sp"
+        android:inputType="text"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="serif"
         app:fontFamily="cursive" />
@@ -55,8 +56,8 @@
         android:autoText="true"
         android:ems="10"
         android:hint="@string/txtWineType"
-        android:inputType="text|textAutoComplete"
-        android:textSize="18sp"
+        android:inputType="text"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="serif"
         app:fontFamily="cursive" />
@@ -74,7 +75,7 @@
         android:hint="@string/txtPurchasedAt"
         android:inputType="text"
         android:textAppearance="@style/TextAppearance.Design.CollapsingToolbar.Expanded"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:fontFamily="cursive" />
     <Space
         android:layout_width="match_parent"
@@ -83,14 +84,15 @@
 
     <EditText
         android:id="@+id/editPrice"
-        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/numPrice"
         android:inputType="numberDecimal"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:typeface="serif" />
+        android:typeface="serif"
+        app:fontFamily="cursive" />
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp"

@@ -13,7 +13,7 @@ public class ConfirmationPage extends AppCompatActivity {
 
         TextView confirmationMessage = findViewById(R.id.txtConfirmationMessage);
         wineKeeper confirmDetails = (wineKeeper) getIntent().getSerializableExtra("keeperForm");
-        String message = "Hello" + confirmDetails.getWineName() + "Has been entered in your diary";
+        String message = "Hello! " + confirmDetails.getWineName() + " has been entered in your diary";
         confirmationMessage.setText(message);
     }
 }

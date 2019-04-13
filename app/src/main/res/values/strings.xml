@@ -7,5 +7,5 @@
     <string name="numPrice">Price:</string>
     <string name="numRating">Rating:</string>
     <string name="txtHeader">Enter wine details here</string>
-    <string name="txtConfirmation">Entered info to wine diary</string>
+    <string name="txtConfirmation">Diary entry submitted.</string>
 </resources>
