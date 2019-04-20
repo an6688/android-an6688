@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
     tools:context=".KeeperForm">
 
     <ImageView
@@ -33,10 +35,12 @@
         android:layout_height="20dp"
         />
 
+
     <EditText
         android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autoText="true"
         android:ems="10"
         android:hint="@string/txtName"
         android:inputType="text"
@@ -44,6 +48,7 @@
         android:textStyle="bold"
         android:typeface="serif"
         app:fontFamily="cursive" />
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp"
@@ -73,8 +78,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/txtPurchasedAt"
-        android:inputType="text"
-        android:textAppearance="@style/TextAppearance.Design.CollapsingToolbar.Expanded"
+        android:inputType="textFilter|textMultiLine"
         android:textSize="24sp"
         app:fontFamily="cursive" />
     <Space
@@ -98,15 +102,16 @@
         android:layout_height="20dp"
         />
 
-    <EditText
+    <TextView
         android:id="@+id/editRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/numRating"
-        android:inputType="numberDecimal"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:typeface="serif" />
+        android:typeface="serif"
+        app:fontFamily="cursive"/>
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp"
@@ -115,16 +120,18 @@
     <RatingBar
         android:id="@+id/ratingBar"
         style="@style/Widget.AppCompat.RatingBar.Indicator"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:isIndicator="false"
         android:numStars="5"
+        android:rating="5"
         android:stepSize=".5" />
 
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="221dp"
         android:layout_height="wrap_content"
-        android:text="Submit" />
+        android:text="Submit"
+        android:enabled="true"/>
 
 </LinearLayout>

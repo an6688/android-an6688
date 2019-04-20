@@ -9,7 +9,7 @@ public class wineKeeper implements Serializable {
     private double price;
     private double rating;
 
-    public wineKeeper(String wineName, String wineType, String purchasedAt, double price, double rating) {
+    public wineKeeper(String wineName, String wineType, String purchasedAt, double price) {
         this.wineName = wineName;
         this.wineType = wineType;
         this.purchasedAt = purchasedAt;
@@ -47,13 +47,5 @@ public class wineKeeper implements Serializable {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public double getRating() {
-        return rating;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
     }
 }

@@ -8,4 +8,7 @@
     <string name="numRating">Rating:</string>
     <string name="txtHeader">Enter wine details here</string>
     <string name="txtConfirmation">Diary entry submitted.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

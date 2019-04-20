@@ -31,9 +31,9 @@ public class DummyContent {
           //  addItem(createDummyItem(i));
         //
         // }
-        addItem(new DummyItem("1","Wine diary", "give me your ideas here"));
-        addItem(new DummyItem("2", "wine list", "list of wine"));
-        addItem(new DummyItem("3", "location", "click here for location"));
+        addItem(new DummyItem("1","Wine diary entry", "give me your ideas here"));
+        addItem(new DummyItem("2", "Wine list", "list of wine"));
+        addItem(new DummyItem("3", "Location", "click here for location"));
     }
 
     private static void addItem(DummyItem item) {

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WineDetail">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/wineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wine Name"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/wineType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wine Type"
+            android:textSize="24sp" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/imgWine1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/witchinghour" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/txtWineDescription"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:text="Details of wine:"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>
