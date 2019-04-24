@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -126,6 +127,10 @@ public class ItemDetailFragment extends Fragment {
         }
         else if (mItem.id.equals("2")){
             // 2 is list wine youve tried
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.item_detail_container, new WineList());
+            transaction.addToBackStack(null);
+            transaction.commit();
         }
 
         else if (mItem.id.equals("3"))

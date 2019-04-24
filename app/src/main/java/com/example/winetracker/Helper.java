@@ -1,3 +1,5 @@
+package com.example.winetracker;
+
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
