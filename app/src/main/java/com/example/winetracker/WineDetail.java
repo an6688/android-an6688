@@ -38,7 +38,7 @@ public class WineDetail extends Fragment {
         String wineId = getActivity().getIntent().getStringExtra(WineList.WINE_ID);
         Wine wine = DataProvider.wineMap.get(wineId);
 
-        TextView wineName = view.findViewById(R.id.txtWineName);
+        TextView wineName = view.findViewById(R.id.wineName);
         wineName.setText(wine.getName());
 
         TextView winePrice = view.findViewById(R.id.wineType);
