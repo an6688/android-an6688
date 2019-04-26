@@ -29,9 +29,9 @@
             android:layout_height="30dp" />
 
         <ImageView
-            android:id="@+id/imgWine1"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:id="@id/imgWineDetail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/witchinghour" />
         <Space
             android:layout_width="wrap_content"

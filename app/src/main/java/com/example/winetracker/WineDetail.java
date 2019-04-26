@@ -38,16 +38,16 @@ public class WineDetail extends Fragment {
         String wineId = getActivity().getIntent().getStringExtra(WineList.WINE_ID);
         Wine wine = DataProvider.wineMap.get(wineId);
 
-        TextView wineName = view.findViewById(R.id.txtBottleName1);
+        TextView wineName = view.findViewById(R.id.txtWineName);
         wineName.setText(wine.getName());
 
-        TextView winePrice = view.findViewById(R.id.txtBottlePrice);
+        TextView winePrice = view.findViewById(R.id.wineType);
         winePrice.setText(Helper.getPriceFormatted(wine.getPrice()));
 
         TextView wineDescription = view.findViewById(R.id.txtWineDescription);
         wineDescription.setText(wine.getDescription());
 
-        ImageView imageView = view.findViewById(R.id.imgWine1);
+        ImageView imageView = view.findViewById(R.id.imgWineDetail);
         Bitmap bitmap = Helper.getBitMapFromAsset(getContext(), wine.getId());
         imageView.setImageBitmap(bitmap);
 

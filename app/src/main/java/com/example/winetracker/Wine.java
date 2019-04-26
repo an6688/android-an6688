@@ -5,6 +5,7 @@ public class Wine {
     private String id;
     private String name;
     private String description;
+    private String imgURL;
     private double price;
 
     public Wine(String id, String name, String description, double price) {

@@ -135,7 +135,7 @@ public class ItemDetailFragment extends Fragment {
 
         else if (mItem.id.equals("3"))
         {
-            // 3 is location of wines to get the wines you tried
+            startActivity(new Intent(getContext(), MapsActivity.class));
         }
         return rootView;
     }
