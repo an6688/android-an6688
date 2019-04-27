@@ -41,6 +41,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Sydney and move the camera
         LatLng willametteValley = new LatLng(45.210029, -123.196604);
         mMap.addMarker(new MarkerOptions().position(willametteValley).title("Willamette Valley Vineyards McMinnville Tasting Room, Northeast 3rd Street, McMinnville, OR"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(willametteValley));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(willametteValley,16));
     }
 }
