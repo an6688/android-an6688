@@ -13,16 +13,14 @@
 
     <TextView
         android:id="@+id/txtWineName"
-        android:layout_width="167dp"
-        android:layout_height="47dp"
+        android:layout_width="220dp"
+        android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:ellipsize="none"
-        android:gravity="center_vertical"
-        android:lineSpacingMultiplier="0.5"
+        android:lineSpacingMultiplier="1.0"
         android:textSize="12sp"
         app:autoSizeMaxTextSize="112sp"
         app:autoSizeMinTextSize="12sp"
@@ -48,7 +46,7 @@
     <ImageView
         android:id="@id/imgWineDetail"
         android:layout_width="128dp"
-        android:layout_height="97dp"
+        android:layout_height="107dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="260dp"
         android:layout_marginRight="260dp"

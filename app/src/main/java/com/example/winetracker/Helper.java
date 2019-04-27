@@ -16,7 +16,7 @@ public class Helper {
         InputStream inputStream = null;
 
         try {
-            inputStream = assetManager.open("id" + ".png");
+            inputStream = assetManager.open(id + ".png");
             return BitmapFactory.decodeStream(inputStream);
         }
         catch (IOException exception)
